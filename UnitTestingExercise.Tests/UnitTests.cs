@@ -28,43 +28,43 @@ namespace UnitTestingExercise.Tests
         }
 
         [Theory]
-        [InlineData()]//Add test data <-------
-        public void SubtractTest(int minuend, int subtrhend, int expected)
+        [InlineData(5, 2, 3)]//Add test data <-------
+        public void SubtractTest(int x, int y, int expected)
         {
             //Start Step 5 here:
 
             //Arrange
-            var actual = new Calculator();
+            var instance1 = new Calculator();
             //Act
-
+            var actual1= instance1.Subtract(x, y);
             //Assert
-
+            Assert.Equal(expected, actual1);
         }
 
         [Theory]
-        [InlineData()]//Add test data <-------
+        [InlineData(2, 3, 6)]//Add test data <-------
         public void MultiplyTest(int num1, int num2, int expected)
         {
             //Start Step 7 here:
 
             //Arrange
-
+            var instance2 = new Calculator();
             //Act
-
+            var actual2 = instance2.Multiply(num1, num2);
             //Assert
-
+            Assert.Equal(expected, actual2);
         }
 
         [Theory]
-        [InlineData()]//Add test data <-------
+        [InlineData(8, 4, 2)]//Add test data <-------
         public void DivideTest(int num1, int num2, int expected)
         {
             //Arrange
-
+            var instance3 = new Calculator();
             //Act
-
+            var actual3  = instance3.Divide(num1, num2);
             //Assert
-
+            Assert.Equal(expected, actual3);
         }
 
     }

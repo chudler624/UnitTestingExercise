@@ -35,6 +35,10 @@ namespace UnitTestingExercise
 
         // Step 6: 
         // Create a Multiply method that passes 2 integers
+        public int Multiply (int a, int b)
+        { 
+            return a * b; 
+        }
 
 
         // Step 7: Navigate to the UnitTests.cs file and complete the MultiplyTest unit test method 
@@ -42,6 +46,11 @@ namespace UnitTestingExercise
 
         // Step 8: 
         // Create a Divide method that passes 2 integers
+        public int Divide (int c, int d)
+            { 
+               return c / d; 
+            }
+
 
         // Step 9: Navigate to the UnitTests.cs file and complete the DivideTest unit test method 
 
